@@ -1,16 +1,18 @@
+@import "tailwindcss";
+
 body {
     background-color: red;
 }
 
 #heroImage {
-    width: 10em;;
+    width: 10em;
 }
 #headerName {
     font-size: 20px;
     font-weight: bold;
 }
 .container {
-    border: 1px solid red;
+    border: 1px solid white;
 }
 .navbar {
     border: 1px solid black;
@@ -39,9 +41,6 @@ body {
 }
 ul {
     list-style: none;
-}
-.navbar-navigation-list-item {
-
 }
 
 /* Hero section. */
