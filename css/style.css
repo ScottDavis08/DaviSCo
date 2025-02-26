@@ -10,7 +10,7 @@ body {
     font-weight: bold;
 }
 .container {
-    border: 1px solid red;
+    border: 1px solid white;
 }
 .navbar {
     border: 1px solid black;
@@ -39,9 +39,6 @@ body {
 }
 ul {
     list-style: none;
-}
-.navbar-navigation-list-item {
-
 }
 
 /* Hero section. */
