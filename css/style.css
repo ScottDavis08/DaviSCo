@@ -1,9 +1,11 @@
+@import "tailwindcss";
+
 body {
     background-color: red;
 }
 
 #heroImage {
-    width: 10em;;
+    width: 10em;
 }
 #headerName {
     font-size: 20px;
