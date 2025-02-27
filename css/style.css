@@ -12,14 +12,17 @@
 }
 
 @layer components {
+    /* Navbar components */
     .navbar-navigation-list-item {
         @apply font-bold text-lg;
     }
+
+    /* About components. */
     .aboutCard {
-        @apply flex flex-col align-middle max-w-40;
+        @apply flex flex-col align-middle items-center;
     }
     .aboutCardContent {
-        @apply flex flex-col items-center justify-center;
+        @apply flex flex-col items-center justify-center max-w-80;
     }
 }
 
