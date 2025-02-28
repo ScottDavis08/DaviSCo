@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* npx tailwindcss -i ./css/style.css -o ./css/output.css --watch */
 
 @theme {
     --color-primary: #3217E6ff;
@@ -12,6 +13,10 @@
 }
 
 @layer components {
+    .contentSpacer {
+        @apply w-full md:h-10 sm:h-5 h-2 bg-green-100;
+    }
+
     /* Navbar components */
     .navbar-navigation-list-item {
         @apply font-bold text-lg;
@@ -23,6 +28,17 @@
     }
     .aboutCardContent {
         @apply flex flex-col items-center justify-center max-w-80;
+    }
+
+    /* Skills components. */
+    .skillsCard{
+        @apply flex flex-col justify-around gap-5;
+    }
+    .skillsList {
+        @apply flex flex-row flex-wrap items-start gap-3;
+    }
+    .skillsListItem {
+        @apply !px-3 !py-2 bg-secondary;
     }
 }
 
