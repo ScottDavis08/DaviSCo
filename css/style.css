@@ -1,5 +1,11 @@
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./components/headercomponents.css"
 /* npx tailwindcss -i ./css/style.css -o ./css/output.css --watch */
+
+/* @tailwind utilities;
+@import "tailwindcss/preflight"; */
 
 @theme {
     --color-primary: #3217E6ff;
@@ -13,8 +19,25 @@
 }
 
 @layer components {
+    .backgroundGradient-LeftToRight {
+        @apply bg-gradient-to-br from-primary to-secondary via-black;
+    }
+    .backgroundGradient-RightToLeft {
+        @apply bg-gradient-to-bl from-secondary to-primary via-black;
+    }
+    .pageWidth {
+        @apply mx-30;
+    }
+
     .contentSpacer {
-        @apply w-full md:h-10 sm:h-5 h-2 bg-green-100;
+        /* @apply w-full md:h-20 sm:h-5 h-2; */
+    }
+
+    .titleFormatting {
+        @apply !text-4xl !font-bold;
+    }
+    .mediumTitleFormatting {
+        @apply !text-2xl !font-bold;
     }
 
     /* Navbar components */
@@ -39,6 +62,12 @@
     }
     .skillsListItem {
         @apply !px-3 !py-2 bg-secondary;
+    }
+
+    /* Projects components. */
+
+    .projectsCardImage {
+        @apply w-80;
     }
 }
 
