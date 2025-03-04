@@ -1,11 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "./components/headercomponents.css"
+@import "tailwindcss";
+@import "./components/headerComponents.css";
 /* npx tailwindcss -i ./css/style.css -o ./css/output.css --watch */
-
-/* @tailwind utilities;
-@import "tailwindcss/preflight"; */
 
 @theme {
     --color-primary: #3217E6ff;
@@ -26,18 +21,22 @@
         @apply bg-gradient-to-bl from-secondary to-primary via-black;
     }
     .pageWidth {
-        @apply mx-30;
+        @apply px-20;
     }
 
     .contentSpacer {
         /* @apply w-full md:h-20 sm:h-5 h-2; */
     }
 
+    .sectionSpacer {
+        @apply md:py-20 sm:py-5 py-2;
+    }
+
     .titleFormatting {
-        @apply !text-4xl !font-bold;
+        @apply text-5xl font-bold;
     }
     .mediumTitleFormatting {
-        @apply !text-2xl !font-bold;
+        @apply text-4xl font-bold;
     }
 
     /* Navbar components */
@@ -47,10 +46,10 @@
 
     /* About components. */
     .aboutCard {
-        @apply flex flex-col align-middle items-center;
+        @apply flex flex-col align-middle items-center pt-20;
     }
     .aboutCardContent {
-        @apply flex flex-col items-center justify-center max-w-80;
+        @apply flex flex-col items-center justify-center max-w-120;
     }
 
     /* Skills components. */
@@ -71,7 +70,8 @@
     }
 }
 
-
-#heroImage {
-    width: 10em;
+body {
+    font-family: cascadia code;
+    font-size: 2em;
+    font-weight: normal;
 }

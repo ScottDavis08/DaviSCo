@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <head>
     <title>DaviSCo</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/output.css">
 </head>
 
 <body>
     <div class="bg-gradient-to-bl from-primary to-secondary to-tertiary text-white"><!-- container -->
-        <div class="navbar flex justify-between"><!-- navbar -->
-            <div id="headerName" class="navbar-logo font-bold size-4">DaviSCo</div><!-- navbar-logo -->
+        <div class="navbar flex justify-between items-center"><!-- navbar -->
+            <div id="headerName" class="navbar-logo font-bold">DaviSCo</div><!-- navbar-logo -->
             <div id="headerBurger" class="navbar-navigation w-1/2"><!-- navbar-navigation -->
                 <ul class="navbar-navigation-list flex justify-between">
                     <li class="navbar-navigation-list-item" id="burgerAbout">About</li>
@@ -19,17 +19,17 @@
             </div><!-- navbar-navigation -->
         </div><!-- navbar -->
 
-        <div id="hero" class="hero backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 flex-wrap"><!-- hero -->
+        <div id="hero" class="hero sectionSpacer backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 flex-wrap"><!-- hero -->
             <div class="heroText flex justify-center flex-col "><!-- heroText -->
                 <div id="heroTitle mediumTitleFormatting">Scott Davis</div><!-- heroTitle -->
                 <div id="heroSubtitle">Web Developer</div><!-- heroSubtitle -->
             </div><!-- heroText -->
-            <div class="heroImage"><img src="img/self.png" alt="Personal image" width="400" height="500"></div><!-- heroImage -->
+            <img class="heroImage w-100" src="img/self.png" alt="Personal image">
         </div><!-- hero -->
 
         <div class="contentSpacer"></div>
 
-        <div class="about backgroundGradient-RightToLeft pageWidth flex flex-col justify-start align-middle items-center"><!-- about -->
+        <div class="about sectionSpacer backgroundGradient-RightToLeft pageWidth flex flex-col justify-start align-middle items-center"><!-- about -->
             <div class="aboutTitle titleFormatting">About My</div><!-- aboutTitle -->
             <div class="aboutContainer flex justify-evenly align-middle flex-wrap w-full gap-y-5"><!-- aboutContainer -->
                 <div class="aboutCard w-full md:w-[48%]"><!-- aboutCard -->
@@ -39,10 +39,7 @@
                         feugiat. Donec pellentesque
                         leo a volutpat faucibus. Sed ac imperdiet nisl. Sed viverra interdum nunc tempus hendrerit. Duis
                         mi erat, pretium sit
-                        amet elit at, commodo vestibulum ex. Nunc velit sapien, efficitur venenatis lacus in,
-                        condimentum lobortis urna. Nam eu
-                        aliquet elit. Maecenas auctor, metus id commodo faucibus, ipsum erat pretium neque, eu venenatis
-                        sapien eros a ante.
+                        amet elit at, commodo vestibulum ex. 
                     </div><!-- aboutCardContent -->
                 </div><!-- aboutCard -->
 
@@ -53,10 +50,7 @@
                         feugiat. Donec pellentesque
                         leo a volutpat faucibus. Sed ac imperdiet nisl. Sed viverra interdum nunc tempus hendrerit. Duis
                         mi erat, pretium sit
-                        amet elit at, commodo vestibulum ex. Nunc velit sapien, efficitur venenatis lacus in,
-                        condimentum lobortis urna. Nam eu
-                        aliquet elit. Maecenas auctor, metus id commodo faucibus, ipsum erat pretium neque, eu venenatis
-                        sapien eros a ante.
+                        amet elit at, commodo vestibulum ex. 
                     </div><!-- aboutCardContent -->
                 </div><!-- aboutCard -->
 
@@ -67,10 +61,7 @@
                         feugiat. Donec pellentesque
                         leo a volutpat faucibus. Sed ac imperdiet nisl. Sed viverra interdum nunc tempus hendrerit. Duis
                         mi erat, pretium sit
-                        amet elit at, commodo vestibulum ex. Nunc velit sapien, efficitur venenatis lacus in,
-                        condimentum lobortis urna. Nam eu
-                        aliquet elit. Maecenas auctor, metus id commodo faucibus, ipsum erat pretium neque, eu venenatis
-                        sapien eros a ante.
+                        amet elit at, commodo vestibulum ex. 
                     </div><!-- aboutCardContent -->
                 </div><!-- aboutCard -->
             </div><!-- aboutContainer -->
@@ -79,7 +70,7 @@
         <div class="contentSpacer"></div>
 
         <!-- Skills Section -->
-        <div class="skills backgroundGradient-LeftToRight pageWidth flex flex-col justify-center align-middle items-center"><!-- skills -->
+        <div class="skills sectionSpacer backgroundGradient-LeftToRight pageWidth flex flex-col justify-center align-middle items-center"><!-- skills -->
             <h2 class="skillsTitle titleFormatting">Skills</h2><!-- skillsTitle -->
             <div class="skillsContainer flex flex-col justify-around w-full gap-10"><!-- skillsContainer -->
                 <div class="skillsCard"><!-- skillsCard -->
@@ -157,7 +148,7 @@
         <div class="contentSpacer"></div>
 
         <!-- Projects Section -->
-        <div class="Projects backgroundGradient-RightToLeft pageWidth flex flex-col items-center"><!-- Projects -->
+        <div class="Projects sectionSpacer backgroundGradient-RightToLeft pageWidth flex flex-col items-center"><!-- Projects -->
             <h2 class="projectsTitle titleFormatting">Projects</h2><!-- projectsTitle -->
             <div class="projectsContainer"><!-- projectsContainer -->
                 <div class="projectsCard"><!-- projectsCard -->
