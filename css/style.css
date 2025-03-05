@@ -25,31 +25,31 @@
     }
 
     .contentSpacer {
-        /* @apply w-full md:h-20 sm:h-5 h-2; */
+        @apply w-full md:h-20 sm:h-5 h-2;
     }
 
     .sectionSpacer {
-        @apply md:py-20 sm:py-5 py-2;
+        @apply md:py-20 sm:py-5 py-2 gap-5;
     }
 
     .titleFormatting {
-        @apply text-5xl font-bold;
+        @apply text-4xl font-bold;
     }
     .mediumTitleFormatting {
-        @apply text-4xl font-bold;
+        @apply text-3xl font-bold text-quaternary pb-3 pt-5;
     }
 
     /* Navbar components */
     .navbar-navigation-list-item {
-        @apply font-bold text-lg;
+        @apply font-bold text-lg px-3;
     }
 
     /* About components. */
     .aboutCard {
-        @apply flex flex-col align-middle items-center pt-20;
+        @apply flex flex-col items-center pt-15 w-full md:w-[48%] lg:w-[30%];
     }
     .aboutCardContent {
-        @apply flex flex-col items-center justify-center max-w-120;
+        @apply flex flex-col justify-center max-w-120 px-5 text-center;
     }
 
     /* Skills components. */
@@ -64,14 +64,22 @@
     }
 
     /* Projects components. */
-
+    .projectsCard {
+        @apply w-full flex flex-row;
+    }
+    .projectsCardContent {
+        @apply flex flex-col justify-start w-[65%];
+    }
     .projectsCardImage {
-        @apply w-80;
+        @apply w-[30%];
+    }
+    .projectsCardContent {
+        /* @apply ; */
     }
 }
 
 body {
-    font-family: cascadia code;
-    font-size: 2em;
-    font-weight: normal;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
 }
