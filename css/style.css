@@ -69,7 +69,7 @@
         @apply w-80;
     }
     .projectsCardContent {
-        @apply max-w-120 px-5 text-center;
+        /* @apply ; */
     }
 }
 

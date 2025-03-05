@@ -372,11 +372,6 @@
   .projectsCardImage {
     width: calc(var(--spacing) * 80);
   }
-  .projectsCardContent {
-    max-width: calc(var(--spacing) * 120);
-    padding-inline: calc(var(--spacing) * 5);
-    text-align: center;
-  }
 }
 body {
   font-family: 'Assistant', sans-serif;
