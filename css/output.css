@@ -267,7 +267,13 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .pageWidth {
-    padding-inline: calc(var(--spacing) * 20);
+    padding-inline: calc(var(--spacing) * 5);
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
   }
   .contentSpacer {
     height: calc(var(--spacing) * 2);
@@ -286,7 +292,7 @@
       padding-block: calc(var(--spacing) * 5);
     }
     @media (width >= 48rem) {
-      padding-block: calc(var(--spacing) * 20);
+      padding-block: calc(var(--spacing) * 15);
     }
   }
   .titleFormatting {
@@ -354,15 +360,29 @@
     display: flex;
     width: 100%;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .projectsCardContent {
     display: flex;
-    width: 65%;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: calc(var(--spacing) * 10);
+    @media (width >= 48rem) {
+      width: 60%;
+    }
   }
   .projectsCardImage {
-    width: 30%;
+    width: 100%;
+    padding-bottom: calc(var(--spacing) * 0);
+    @media (width >= 48rem) {
+      width: 40%;
+    }
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 10);
+    }
   }
 }
 body {
