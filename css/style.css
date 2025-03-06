@@ -21,7 +21,7 @@
         @apply bg-gradient-to-bl from-secondary to-primary via-black;
     }
     .pageWidth {
-        @apply px-20;
+        @apply px-5 sm:px-10 md:px-20;
     }
 
     .contentSpacer {
@@ -29,7 +29,7 @@
     }
 
     .sectionSpacer {
-        @apply md:py-20 sm:py-5 py-2 gap-5;
+        @apply md:py-15 sm:py-5 py-2 gap-5;
     }
 
     .titleFormatting {
@@ -42,6 +42,12 @@
     /* Navbar components */
     .navbar-navigation-list-item {
         @apply font-bold text-lg px-3;
+    }
+    .navScott {
+        @apply pl-[2em];
+    }
+    .navConsulting {
+        @apply pl-[2.5em];
     }
 
     /* About components. */
@@ -65,13 +71,19 @@
 
     /* Projects components. */
     .projectsCard {
-        @apply w-full flex flex-row;
+        @apply w-full flex flex-row flex-wrap justify-center items-start gap-5;
+    }
+    .projectsCardOdd {
+        @apply flex-row;
+    }
+    .projectsCardEven {
+        @apply flex-row-reverse;
     }
     .projectsCardContent {
-        @apply flex flex-col justify-start w-[65%];
+        @apply flex flex-col justify-start w-full md:w-[58%] pb-10 ;
     }
     .projectsCardImage {
-        @apply w-[30%];
+        @apply w-full md:w-[38%] pb-0 md:pb-10;
     }
     .projectsCardContent {
         /* @apply ; */
@@ -82,4 +94,8 @@ body {
     font-family: 'Assistant', sans-serif;
     font-size: 1em;
     font-weight: 100;
+}
+
+.transition-text {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }

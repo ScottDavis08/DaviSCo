@@ -3,12 +3,18 @@
     <title>DaviSCo</title>
     <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
     <div class="text-white"><!-- container -->
-        <div class="navbar flex justify-between items-center"><!-- navbar -->
-            <div id="headerName" class="navbar-logo font-bold">DaviSCo</div><!-- navbar-logo -->
+        <div class="navbar bg-quaternary flex justify-between items-center sticky top-0 transition-all"><!-- navbar -->
+            <div id="headerName" class="navbar-logo font-bold transition-all">
+                <span class="block">DaviS</span>
+                <span class="block navScott">SCott</span>
+                <span class="block navConsulting">Consulting</span>
+            </div><!-- navbar-logo -->
             <div id="headerBurger" class="navbar-navigation w-1/2"><!-- navbar-navigation -->
                 <ul class="navbar-navigation-list flex justify-between">
                     <li class="navbar-navigation-list-item" id="burgerAbout"><a href="#aboutSection">About</a></li>
@@ -144,7 +150,7 @@
         <!-- Projects Section -->
         <div id="projectsSection" class="projects sectionSpacer backgroundGradient-RightToLeft pageWidth flex flex-col items-center"><!-- Projects -->
             <div class="projectsTitle titleFormatting">Projects</div>
-            <div class="projectsCard">
+            <div class="projectsCard projectsCardOdd">
                 <div class="projectsCardContent">
                     <div class="projectsCardTitle mediumTitleFormatting">Project 1</div>
                     <div class="projectsCardDescription">
@@ -159,7 +165,7 @@
                     <img src="img/ProjectImage-Sample.jpg" alt="Project 1">
                 </div>
             </div>
-            <div class="projectsCard">
+            <div class="projectsCard projectsCardEven">
                 <div class="projectsCardContent">
                     <div class="projectsCardTitle mediumTitleFormatting">Project 2</div>
                     <div class="projectsCardDescription">
