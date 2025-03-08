@@ -7,6 +7,7 @@
     --color-secondary: #5E51ADff;
     --color-tertiary: #41358Cff;
     --color-quaternary: #5A660Eff;
+    --color-textColor: #ffffffff;
     /* --iris: #5E51ADff;
     --chrysler-blue: #3217E6ff;
     --tekhelet: #41358Cff;
@@ -29,14 +30,14 @@
     }
 
     .sectionSpacer {
-        @apply md:py-15 sm:py-5 py-2 gap-5;
+        @apply md:py-15 py-10 gap-5;
     }
 
     .titleFormatting {
-        @apply text-4xl font-bold;
+        @apply text-4xl;
     }
     .mediumTitleFormatting {
-        @apply text-3xl font-bold text-quaternary pb-3 pt-5;
+        @apply text-3xl text-quaternary pb-3 pt-5;
     }
 
     /* Navbar components */
@@ -71,7 +72,7 @@
 
     /* Projects components. */
     .projectsCard {
-        @apply w-full flex flex-row flex-wrap justify-center items-start gap-5;
+        @apply w-full flex flex-row flex-wrap justify-between items-start gap-5;
     }
     .projectsCardOdd {
         @apply flex-row;
@@ -90,9 +91,19 @@
     }
 }
 
+@layer utilities {
+    .hamburger-toggle {
+        @apply [&>div]:h-0 [&>div]:bg-quaternary 
+        [&>div]:before:translate-y-0 
+        [&>div]:before:rotate-45 
+        [&>div]:after:translate-y-0 
+        [&>div]:after:-rotate-45;
+    }
+}
+
 body {
     font-family: 'Assistant', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 100;
 }
 

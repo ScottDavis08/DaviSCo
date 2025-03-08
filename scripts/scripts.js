@@ -1,9 +1,15 @@
 let isTextChanged = false;
 
+const toggleMenu = document.querySelector("#toggleMenu");
+
+toggleMenu.onclick = () => {
+    toggleMenu.classList.toggle("hamburger-toggle");
+};
+
 window.addEventListener("scroll", function() {
     const navText = this.document.getElementById("headerName");
 
-    if (this.window.scrollY > 50 && !isTextChanged) {
+    if (this.window.scrollY > 150 && !isTextChanged) {
         isTextChanged = true;
         navText.classList.add("opacity-0", "scale-90");
 
