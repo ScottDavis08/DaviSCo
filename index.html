@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <head>
     <title>DaviSCo</title>
+    <link rel="icon" type="image/png" href="img/DaviSCo.png">
     <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
-    <div class="text-white"><!-- container -->
-        <div class="navbar bg-quaternary flex justify-between items-center sticky top-0 transition-all"><!-- navbar -->
-            <div id="headerName" class="navbar-logo font-bold transition-all">
+    <div class="text-textColor"><!-- container -->
+        <div class="navbar bg-quaternary flex justify-between items-center sticky top-0 transition-all pl-3 pr-4"><!-- navbar -->
+            <div id="headerName" class="navbar-logo transition-all">
                 <span class="block">DaviS</span>
                 <span class="block navScott">SCott</span>
                 <span class="block navConsulting">Consulting</span>
             </div><!-- navbar-logo -->
-            <div id="headerBurger" class="navbar-navigation w-1/2"><!-- navbar-navigation -->
+            <div id="toggleMenu" class="md:hidden grid place-content-center">
+                <div class="
+                    w-16
+                    h-2 
+                    bg-primary 
+                    rounded-full 
+                    transition-all
+                    duration-150
+                    before:content-[''] 
+                    before:absolute
+                    before:w-16
+                    before:h-2
+                    before:bg-primary 
+                    before:rounded-full 
+                    before:-translate-y-4 
+                    before:transition-all
+                    before:duration-d150
+                    after:content-[''] 
+                    after:absolute 
+                    after:w-16
+                    after:h-2
+                    after:bg-primary 
+                    after:rounded-full 
+                    after:translate-y-4
+                    after:transition-all 
+                    after:duration-150">
+                </div>
+            </div>
+            <nav id="navbar-navigation" class="navbar-navigation hidden md:contents w-1/2"><!-- navbar-navigation -->
                 <ul class="navbar-navigation-list flex justify-between">
                     <li class="navbar-navigation-list-item" id="burgerAbout"><a href="#aboutSection">About</a></li>
                     <li class="navbar-navigation-list-item" id="burgerSkills"><a href="#skillsSection">Skills</a></li>
                     <li class="navbar-navigation-list-item" id="burgerProjects"><a href="#projectsSection">Projects</a></li>
                     <li class="navbar-navigation-list-item" id="burgerContact"><a href="">Contact</a></li> 
                 </ul>
-            </div><!-- navbar-navigation -->
+            </nav><!-- navbar-navigation -->
         </div><!-- navbar -->
 
         <div id="heroSection" class="hero sectionSpacer backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 flex-wrap"><!-- hero -->
@@ -182,6 +210,8 @@
             </div>
         </div><!-- Projects -->
     </div><!-- container -->
+
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
