@@ -47,23 +47,17 @@
                     after:duration-150">
                 </div>
             </div>
-            <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full transform translate-y-[-100%] transition-transform duration-300 ease-in-out md:hidden bg-quaternary flex items-center justify-center z-1">
-                <div class="flex flex-col items-center justify-center h-full">
-                    <ul class="flex flex-col items-center gap-8">
-                        <li class="navbar-navigation-list-item"><a href="#aboutSection">About</a></li>
-                        <li class="navbar-navigation-list-item"><a href="#skillsSection">Skills</a></li>
-                        <li class="navbar-navigation-list-item"><a href="#projectsSection">Projects</a></li>
-                        <li class="navbar-navigation-list-item"><a href="">Contact</a></li>
-                    </ul>
-                </div>
+            <div id="mobileMenu" class="md:hidden bg-quaternary menu-closed">
+                <div class="navbar-navigation-list-item"><a href="#aboutSection">AboutMob</a></div>
+                <div class="navbar-navigation-list-item"><a href="#skillsSection">SkillsMob</a></div>
+                <div class="navbar-navigation-list-item"><a href="#projectsSection">ProjectsMob</a></div>
+                <div class="navbar-navigation-list-item"><a href="">ContactMob</a></div>
             </div>
-            <nav id="navbar-navigation" class="navbar-navigation hidden md:contents w-1/2"><!-- navbar-navigation -->
-                <ul class="navbar-navigation-list flex justify-between">
-                    <li class="navbar-navigation-list-item" id="burgerAbout"><a href="#aboutSection">About</a></li>
-                    <li class="navbar-navigation-list-item" id="burgerSkills"><a href="#skillsSection">Skills</a></li>
-                    <li class="navbar-navigation-list-item" id="burgerProjects"><a href="#projectsSection">Projects</a></li>
-                    <li class="navbar-navigation-list-item" id="burgerContact"><a href="">Contact</a></li> 
-                </ul>
+            <nav id="navbar-navigation" class="navbar-navigation hidden w-1/2 md:flex md:justify-between"><!-- navbar-navigation -->
+                <div class="navbar-navigation-list-item" id="burgerAbout"><a href="#aboutSection">About</a></div>
+                <div class="navbar-navigation-list-item" id="burgerSkills"><a href="#skillsSection">Skills</a></div>
+                <div class="navbar-navigation-list-item" id="burgerProjects"><a href="#projectsSection">Projects</a></div>
+                <div class="navbar-navigation-list-item" id="burgerContact"><a href="">Contact</a></div>
             </nav><!-- navbar-navigation -->
         </div><!-- navbar -->
 
@@ -72,7 +66,7 @@
                 <div id="heroTitle mediumTitleFormatting">Scott Davis</div><!-- heroTitle -->
                 <div id="heroSubtitle">Web Developer</div><!-- heroSubtitle -->
             </div><!-- heroText -->
-            <img class="heroImage w-110" src="img/self.png" alt="Personal image">
+            <img class="heroImage w-110" src="img/whatPeopleWant.PNG" alt="Personal image">
         </div><!-- hero -->
 
         <div id="aboutSection" class="about sectionSpacer backgroundGradient-RightToLeft pageWidth flex flex-col justify-start align-middle items-center"><!-- about -->
@@ -114,6 +108,7 @@
         </div><!-- about -->
 
         <!-- Skills Section -->
+         <!-- TODO: Add fancy shadows to all the buttons. -->
         <div id="skillsSection" class="skills sectionSpacer backgroundGradient-LeftToRight pageWidth flex flex-col justify-center align-middle items-center"><!-- skills -->
             <h2 class="skillsTitle titleFormatting">Skills</h2><!-- skillsTitle -->
             <div class="skillsContainer flex flex-col justify-around w-full"><!-- skillsContainer -->

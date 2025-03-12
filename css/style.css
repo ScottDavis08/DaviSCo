@@ -42,7 +42,7 @@
 
     /* Navbar components */
     .navbar-navigation-list-item {
-        @apply font-bold text-lg px-3;
+        @apply font-bold text-lg px-3 md:visible;
     }
     .navScott {
         @apply pl-[2em];
@@ -101,10 +101,10 @@
     }
 
     .menu-open {
-        @apply translate-y-0;
+        @apply visible;
     }
     .menu-closed {
-        @apply -translate-y-full;
+        @apply hidden;
     }
 }
 

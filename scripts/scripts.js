@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener("scroll", function() {
     const navText = this.document.getElementById("headerName");
 
-    if (this.window.scrollY > 150 && !isTextChanged) {
+    if (this.window.scrollY > 50 && !isTextChanged) {
         isTextChanged = true;
         navText.classList.add("opacity-0", "scale-90");
 
