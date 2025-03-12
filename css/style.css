@@ -99,6 +99,13 @@
         [&>div]:after:translate-y-0 
         [&>div]:after:-rotate-45;
     }
+
+    .menu-open {
+        @apply translate-y-0;
+    }
+    .menu-closed {
+        @apply -translate-y-full;
+    }
 }
 
 body {
