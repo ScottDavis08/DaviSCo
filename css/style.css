@@ -101,7 +101,7 @@
     }
 
     .menu-open {
-        @apply visible;
+        @apply flex flex-col items-center py-4;
     }
     .menu-closed {
         @apply hidden;
