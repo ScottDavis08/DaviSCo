@@ -276,9 +276,6 @@
   .justify-start {
     justify-content: flex-start;
   }
-  .scroll-smooth {
-    scroll-behavior: smooth;
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
