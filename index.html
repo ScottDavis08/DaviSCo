@@ -10,7 +10,7 @@
 <body>
     <!-- TODO: Add sticky icons for social media links in the bottom left corner. -->
      <!-- TODO: Update actual content for sections. -->
-    <div class="text-textColor scroll-smooth"><!-- container -->
+    <div class="text-textColor"><!-- container -->
         <div class="navbar bg-quaternary flex justify-between items-center sticky top-0 transition-all pl-3 pr-4"><!-- navbar -->
             <!-- TODO: Fix the scroll behaviour around the logo. -->
             <!-- TODO: Add the header as a link back to home. -->
@@ -67,8 +67,10 @@
 
         <div id="heroSection" class="hero sectionSpacer backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 flex-wrap"><!-- hero -->
             <div class="heroText flex justify-center flex-col "><!-- heroText -->
-                <div id="heroTitle mediumTitleFormatting">Scott Davis</div><!-- heroTitle -->
-                <div id="heroSubtitle">Web Developer</div><!-- heroSubtitle -->
+                <div id="heroTitle mediumTitleFormatting">Dobby</div><!-- heroTitle -->
+                <!-- <div id="heroTitle mediumTitleFormatting">Scott Davis</div>heroTitle -->
+                <!-- <div id="heroSubtitle">Web Developer</div>heroSubtitle -->
+                <div id="heroSubtitle">Loved his monkey</div><!-- heroSubtitle -->
             </div><!-- heroText -->
             <img class="heroImage w-110" src="img/whatPeopleWant.PNG" alt="Personal image">
         </div><!-- hero -->
@@ -226,7 +228,12 @@
         </div><!-- Projects -->
     </div><!-- container -->
 
+    <script src="./node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="./node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="./node_modules/gsap/dist/ScrollToPlugin.min.js"></script>
+    <script src="./node_modules/gsap/dist/TextPlugin.min.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script type="module" src="scripts/gsapEffects.js"></script>
 </body>
 
 </html>
