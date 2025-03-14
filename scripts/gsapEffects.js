@@ -7,8 +7,8 @@ function initHeaderAnimation() {
         scrollTrigger: {
             trigger: "body",
             start: "top top",
-            end: "150px", // Increased scroll distance for smoother transition
-            scrub: 1, // Increased scrub value for smoother animation
+            end: "150px",
+            scrub: 1, 
             toggleActions: "play reverse play reverse"
         }
     });
@@ -17,8 +17,8 @@ function initHeaderAnimation() {
         .to("#headerName", {
             scale: 0.95,
             opacity: 0,
-            duration: 0.5, // Increased duration
-            ease: "power2.inOut" // Added easing function
+            duration: 0.5,
+            ease: "power2.inOut"
         })
         .add(() => {
             document.querySelector("#headerName").innerHTML = "DaviSCo";
@@ -30,7 +30,7 @@ function initHeaderAnimation() {
             ease: "power2.inOut"
         });
 
-    // Reverse animation with smoother transition
+    // Reverse animation
     ScrollTrigger.create({
         trigger: "body",
         start: "top top",
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeaderAnimation();
 });
 
-// Existing scroll functionality
+// Scroll functionality
 function getSamePageAnchor(link) {
     if (
         link.protocol !== window.location.protocol ||
