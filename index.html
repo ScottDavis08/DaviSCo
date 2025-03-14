@@ -2,7 +2,6 @@
 <head>
     <title>DaviSCo</title>
     <link rel="icon" type="image/png" href="img/DaviSCo.png">
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,14 +10,15 @@
     <!-- TODO: Add sticky icons for social media links in the bottom left corner. -->
      <!-- TODO: Update actual content for sections. -->
     <div class="text-textColor"><!-- container -->
-        <div class="navbar bg-quaternary flex justify-between items-center sticky top-0 transition-all pl-3 pr-4"><!-- navbar -->
+        <div class="navbar bg-gradient-to-bl from bg-quaternary to-primary flex justify-between items-center sticky top-0 transition-all pl-3 pr-4 z-10"><!-- navbar -->
             <!-- TODO: Fix the scroll behaviour around the logo. -->
-            <!-- TODO: Add the header as a link back to home. -->
-            <div id="headerName" class="navbar-logo transition-all">
-                <span class="block">DaviS</span>
-                <span class="block navScott">SCott</span>
-                <span class="block navConsulting">Consulting</span>
-            </div><!-- navbar-logo -->
+             <a href="#">
+                 <div id="headerName" class="navbar-logo transition-all">
+                     <span class="block">DaviS</span>
+                     <span class="block navScott">SCott</span>
+                     <span class="block navConsulting">Consulting</span>
+                 </div><!-- navbar-logo -->
+             </a>
             <!-- TODO: Fix the burger menu to be the right size when the header shrinks. -->
             <!-- TODO: Improve the drop down look. -->
             <div id="toggleMenu" class="md:hidden grid place-content-center">
@@ -65,14 +65,30 @@
             </nav><!-- navbar-navigation -->
         </div><!-- navbar -->
 
+        <!-- TODO: Add a shape around the image. -->
         <div id="heroSection" class="hero sectionSpacer backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 flex-wrap"><!-- hero -->
             <div class="heroText flex justify-center flex-col "><!-- heroText -->
-                <div id="heroTitle mediumTitleFormatting">Dobby</div><!-- heroTitle -->
+                <div id="heroTitle mediumTitleFormatting">This is Dobby</div><!-- heroTitle -->
                 <!-- <div id="heroTitle mediumTitleFormatting">Scott Davis</div>heroTitle -->
                 <!-- <div id="heroSubtitle">Web Developer</div>heroSubtitle -->
-                <div id="heroSubtitle">Loved his monkey</div><!-- heroSubtitle -->
+                <div id="heroSubtitle">He loved his monkey</div><!-- heroSubtitle -->
             </div><!-- heroText -->
-            <img class="heroImage w-110" src="img/whatPeopleWant.PNG" alt="Personal image">
+            <div class="heroImageSection relative flex align-middle justify-center">
+                <div class="heroImageContainer 
+                    backgroundGradient-RightToLeft
+                    border-tertiary
+                    border-3
+                    transform-flat 
+                    translate-x-[-1rem]
+                    translate-y-[-.5rem]
+                    rotate-[-10deg]
+                    overflow-hidden
+                    z-3
+                ">
+                    <img class="heroImage w-110 rotate-[10deg] translate-y-[5rem] translate-x-[2rem]" src="img/whatPeopleWant.PNG" alt="Personal image">
+                </div>
+                <div class="absolute bg-tertiary rotate-[-10deg] translate-z-[0px] w-full h-full"></div>
+            </div>
         </div><!-- hero -->
 
         <!-- TODO: Adjust the spacing between items on mobile. -->
