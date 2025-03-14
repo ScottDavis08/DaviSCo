@@ -22,7 +22,7 @@
         @apply bg-gradient-to-bl from-secondary to-primary via-black;
     }
     .pageWidth {
-        @apply px-5 sm:px-10 md:px-20;
+        @apply px-5 sm:px-10 md:pl-28 md:pr-15;
     }
 
     .contentSpacer {
@@ -60,7 +60,7 @@
 
     /* About components. */
     .aboutCard {
-        @apply flex flex-col items-center pt-15 w-full md:w-[48%] lg:w-[30%];
+        @apply flex flex-col items-center pt-15 w-full md:w-[48%] 2xl:w-[30%];
     }
     .aboutCardContent {
         @apply flex flex-col justify-center max-w-120 px-5 text-center;
@@ -71,7 +71,7 @@
         @apply flex flex-col justify-around gap-5;
     }
     .skillsList {
-        @apply flex flex-row flex-wrap items-start gap-3;
+        @apply flex flex-row flex-wrap items-start gap-3 mb-10;
     }
     .skillsListItem {
         @apply !px-3 !py-2 bg-secondary;
@@ -90,8 +90,15 @@
     .projectsCardContent {
         @apply flex flex-col justify-start w-full md:w-[58%] pb-10 ;
     }
+    .projectsCardImageContainer {
+        @apply w-full md:w-[38%] pb-0 md:mb-10 
+            border-tertiary border-[.2em] rounded-[1em] 
+            overflow-hidden
+            shadow-2xl
+            shadow-tertiary;
+    }
     .projectsCardImage {
-        @apply w-full md:w-[38%] pb-0 md:pb-10;
+        @apply w-[100%] h-auto object-contain;
     }
     .projectsCardContent {
         /* @apply ; */
