@@ -23,7 +23,7 @@
         @apply bg-gradient-to-bl from-secondary to-primary via-black;
     }
     .pageWidth {
-        @apply px-5 sm:px-10 md:pl-28 md:pr-15;
+        @apply px-5 sm:px-10 md:pl-28 md:pr-20;
     }
 
     .contentSpacer {
@@ -61,7 +61,7 @@
 
     /* About components. */
     .aboutCard {
-        @apply flex flex-col items-center pt-15 w-full md:w-[48%] 2xl:w-[30%];
+        @apply flex flex-col items-center pt-8 md:pt-15 w-full md:w-[48%] 2xl:w-[30%];
     }
     .aboutCardContent {
         @apply flex flex-col justify-center max-w-120 px-5 text-center;
@@ -103,6 +103,10 @@
     }
     .projectsCardContent {
         /* @apply ; */
+    }
+
+    .personalLinksFooterItem {
+        @apply md:text-2xl text-textColor pb-3 pt-5
     }
 }
 
