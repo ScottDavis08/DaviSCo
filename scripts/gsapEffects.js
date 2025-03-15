@@ -52,8 +52,8 @@ function initHeaderAnimation() {
                 ease: "power2.inOut",
                 onComplete: () => {
                     document.querySelector("#headerName").innerHTML = `
-                        <span class="block">Davis</span>
-                        <span class="block navScott">Scott</span>
+                        <span class="block">DaviS</span>
+                        <span class="block navScott">SCott</span>
                         <span class="block navConsulting">Consulting</span>
                     `;
                     mobileMenu.style.top = mobileMenuHeightMax;
