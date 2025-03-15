@@ -104,6 +104,10 @@
     .projectsCardContent {
         /* @apply ; */
     }
+
+    .personalLinksFooterItem {
+        @apply md:text-2xl text-textColor pb-3 pt-5
+    }
 }
 
 @layer utilities {
