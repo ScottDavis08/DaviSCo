@@ -1,5 +1,9 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
 
+const mobileMenu = document.querySelector("#mobileMenu");
+const mobileMenuHeightMax = 94;
+const mobileMenuHeightMin = 34;
+
 // Header animation
 function initHeaderAnimation() {
     // Create a timeline for the header animation
@@ -9,7 +13,12 @@ function initHeaderAnimation() {
             start: "top top",
             end: "150px",
             scrub: 1, 
-            toggleActions: "play reverse play reverse"
+            toggleActions: "play reverse play reverse",
+            onUpdate: (self) => {
+                // Calculate the new top position based on the scroll.
+                const topPosition = gsap.utils.interpolate(mobileMenuHeightMax, mobileMenuHeightMin, self.progress);
+                mobileMenu.style.top = `${topPosition}px`;
+            }
         }
     });
 
@@ -47,6 +56,7 @@ function initHeaderAnimation() {
                         <span class="block navScott">Scott</span>
                         <span class="block navConsulting">Consulting</span>
                     `;
+                    mobileMenu.style.top = mobileMenuHeightMax;
                     gsap.to("#headerName", {
                         scale: 1,
                         opacity: 1,

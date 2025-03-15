@@ -214,6 +214,9 @@
   .left-1 {
     left: calc(var(--spacing) * 1);
   }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
   .z-3 {
     z-index: 3;
   }
@@ -240,9 +243,6 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
-  }
-  .mx-\[\.5em\] {
-    margin-inline: .5em;
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -415,8 +415,14 @@
     --tw-gradient-to: var(--color-primary);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .px-\[\.5em\] {
-    padding-inline: .5em;
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
@@ -433,20 +439,17 @@
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
   }
+  .pl-3\.5 {
+    padding-left: calc(var(--spacing) * 3.5);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
   .align-middle {
     vertical-align: middle;
   }
-  .text-\[\.5em\] {
-    font-size: .5em;
-  }
   .text-\[\.75em\] {
     font-size: .75em;
-  }
-  .text-\[1em\] {
-    font-size: 1em;
-  }
-  .text-\[2em\] {
-    font-size: 2em;
   }
   .text-textColor {
     color: var(--color-textColor);
