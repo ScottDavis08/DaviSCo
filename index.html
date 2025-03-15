@@ -36,28 +36,28 @@
             <!-- TODO: Improve the drop down look. -->
             <div id="toggleMenu" class="md:hidden grid place-content-center">
                 <div class="
-                    w-10
-                    h-1
+                    w-8
+                    h-0.75
                     bg-textColor 
                     rounded-full 
                     transition-all
                     duration-150
                     before:content-[''] 
                     before:absolute
-                    before:w-10
-                    before:h-1
+                    before:w-8
+                    before:h-0.75
                     before:bg-textColor 
                     before:rounded-full 
-                    before:-translate-y-3
+                    before:-translate-y-2
                     before:transition-all
                     before:duration-d150
                     after:content-[''] 
                     after:absolute 
-                    after:w-10
-                    after:h-1
+                    after:w-8
+                    after:h-0.75
                     after:bg-textColor 
                     after:rounded-full 
-                    after:translate-y-3
+                    after:translate-y-2
                     after:transition-all 
                     after:duration-150">
                 </div>
@@ -112,13 +112,13 @@
         <div id="heroSection"
             class="hero sectionSpacer backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 md:pt-15  flex-wrap">
             <!-- hero -->
-            <div class="heroText flex justify-center flex-col "><!-- heroText -->
+            <div class="heroText flex justify-center flex-col md:w-[59%]"><!-- heroText -->
                 <div id="heroTitle mediumTitleFormatting">This is Dobby</div><!-- heroTitle -->
                 <!-- <div id="heroTitle mediumTitleFormatting">Scott Davis</div>heroTitle -->
                 <!-- <div id="heroSubtitle">Web Developer</div>heroSubtitle -->
                 <div id="heroSubtitle">He loved his monkey</div><!-- heroSubtitle -->
             </div><!-- heroText -->
-            <div class="heroImageSection relative flex align-middle justify-center max-w-[75%] mt-6 md:pt-0">
+            <div class="heroImageSection relative flex align-middle justify-center max-w-[75%] mt-6 md:pt-0 md:w-[35%]">
                 <div class="heroImageContainer 
                     backgroundGradient-RightToLeft
                     border-tertiary
@@ -133,7 +133,8 @@
                     <img class="heroImage w-110 rotate-[10deg] translate-y-[5rem] translate-x-[2rem]"
                         src="img/whatPeopleWant.PNG" alt="Personal image">
                 </div>
-                <div class="absolute bg-tertiary rotate-[-10deg] translate-z-[0px] w-full h-full md:pt-0"></div>
+                <!-- TODO: Fix the max width so it ideally isn't fixed for big screens. -->
+                <div class="absolute bg-tertiary rotate-[-10deg] translate-z-[0px] w-full h-full md:pt-0 xl:max-w-[450px]"></div>
             </div>
         </div><!-- hero -->
 
