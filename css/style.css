@@ -7,6 +7,7 @@
     --color-secondary: #5E51ADff;
     --color-tertiary: #41358Cff;
     --color-quaternary: #e31b6d;
+    /* --color-quaternary: #5A660Eff; */
     --color-textColor: #ffffffff;
     /* --iris: #5E51ADff;
     --chrysler-blue: #3217E6ff;
@@ -52,7 +53,7 @@
     }
 
     .linkLayoutLinks {
-        @apply w-[1.5em] h-[1.5em] transform-none;
+        @apply w-[1.7em] h-[1.7em] transform-none;
     }
     .linkLayoutSVG {
         @apply w-full h-full;
@@ -71,10 +72,10 @@
         @apply flex flex-col justify-around gap-5;
     }
     .skillsList {
-        @apply flex flex-row flex-wrap items-start gap-3 mb-10;
+        @apply flex flex-row flex-wrap items-start gap-4 mb-10;
     }
     .skillsListItem {
-        @apply !px-3 !py-2 bg-secondary;
+        @apply px-5 py-2 bg-secondary hover:scale-[1.1];
     }
 
     /* Projects components. */
