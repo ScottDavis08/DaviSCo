@@ -318,28 +318,12 @@
     --tw-translate-y: -.5rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-y-\[1\.5rem\] {
-    --tw-translate-y: 1.5rem;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-y-\[1rem\] {
     --tw-translate-y: 1rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-y-\[2\.2rem\] {
-    --tw-translate-y: 2.2rem;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[2rem\] {
-    --tw-translate-y: 2rem;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[3rem\] {
-    --tw-translate-y: 3rem;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-\[5rem\] {
-    --tw-translate-y: 5rem;
+  .translate-y-\[2\.5rem\] {
+    --tw-translate-y: 2.5rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-z-\[0px\] {
@@ -416,6 +400,9 @@
   }
   .bg-quaternary {
     background-color: var(--color-quaternary);
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary);
   }
   .bg-textColor {
     background-color: var(--color-textColor);
@@ -1173,13 +1160,6 @@ body {
   syntax: "*";
   inherits: false;
   initial-value: #fff;
-}
-@property --tw-ring-offset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-initial-value: #fff;
 }
 @property --tw-ring-offset-shadow {
   syntax: "*";
