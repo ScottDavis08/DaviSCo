@@ -8,6 +8,8 @@
       "Courier New", monospace;
     --color-black: #000;
     --spacing: 0.25rem;
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
@@ -243,12 +245,6 @@
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
-  .my-4 {
-    margin-block: calc(var(--spacing) * 4);
-  }
-  .my-\[3em\] {
-    margin-block: 3em;
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -366,6 +362,9 @@
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-around {
     justify-content: space-around;
   }
@@ -468,14 +467,21 @@
   .pl-3\.5 {
     padding-left: calc(var(--spacing) * 3.5);
   }
+  .text-center {
+    text-align: center;
+  }
   .align-middle {
     vertical-align: middle;
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-\[\.75em\] {
     font-size: .75em;
   }
-  .text-black {
-    color: var(--color-black);
+  .text-quaternary {
+    color: var(--color-quaternary);
   }
   .text-textColor {
     color: var(--color-textColor);
@@ -671,6 +677,16 @@
       max-width: 450px;
     }
   }
+  .\32 xl\:pt-0 {
+    @media (width >= 96rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .\32 xl\:pt-2 {
+    @media (width >= 96rem) {
+      padding-top: calc(var(--spacing) * 2);
+    }
+  }
 }
 @layer components {
   .backgroundGradient-LeftToRight {
@@ -765,6 +781,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     padding-top: calc(var(--spacing) * 8);
     @media (width >= 48rem) {
       width: 48%;

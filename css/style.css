@@ -61,7 +61,7 @@
 
     /* About components. */
     .aboutCard {
-        @apply flex flex-col items-center pt-8 md:pt-15 w-full md:w-[48%] 2xl:w-[30%];
+        @apply flex flex-col items-center justify-start pt-8 md:pt-15 w-full md:w-[48%] 2xl:w-[30%];
     }
     .aboutCardContent {
         @apply flex flex-col justify-center max-w-120 px-5 text-center;
