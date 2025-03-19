@@ -61,7 +61,7 @@
 
     /* About components. */
     .aboutCard {
-        @apply flex flex-col items-center pt-8 md:pt-15 w-full md:w-[48%] 2xl:w-[30%];
+        @apply flex flex-col items-center justify-start pt-8 md:pt-15 w-full md:w-[48%] 2xl:w-[30%];
     }
     .aboutCardContent {
         @apply flex flex-col justify-center max-w-120 px-5 text-center;
@@ -102,10 +102,10 @@
     }
     .projectsCardImageContainer {
         @apply w-full md:w-[38%] pb-0 md:mb-10 
-            border-tertiary border-[.2em] rounded-[1em] 
+            border-quaternary border-[.2em] rounded-[1em] 
             overflow-hidden
             shadow-2xl
-            shadow-tertiary;
+            shadow-quaternary;
     }
     .projectsCardImage {
         @apply w-[100%] h-auto object-contain;
