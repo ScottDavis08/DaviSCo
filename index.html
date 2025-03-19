@@ -11,14 +11,12 @@
     from-black
     to-black
     via-primary
-    via-secondary
     flex flex-col items-center">
     <!-- TODO: Update actual content for sections. -->
     <div class="text-textColor max-w-500"><!-- container -->
         <!-- bg-quaternary -->
         <div class="navbar
-            bg-gradient-to-bl from bg-quaternary to-primary
-            bg-transparent
+            bg-gradient-to-bl from bg-transparent to-primary
             flex justify-between
             items-center 
             sticky 
@@ -111,15 +109,15 @@
             <!-- hero -->
              <!-- TODO: Fix the transition size where the hero image goes weird. -->
             <div class="heroText flex justify-center flex-col md:w-[59%]"><!-- heroText -->
-                <div id="heroTitle mediumTitleFormatting">This is Dobby</div><!-- heroTitle -->
-                <!-- <div id="heroTitle mediumTitleFormatting">Scott Davis</div>heroTitle -->
-                <!-- <div id="heroSubtitle">Web Developer</div>heroSubtitle -->
-                <div id="heroSubtitle">He loved his monkey</div><!-- heroSubtitle -->
+                <!-- <div id="heroTitle mediumTitleFormatting">This is Dobby</div>heroTitle -->
+                <div id="heroTitle mediumTitleFormatting">Scott Davis</div>
+                <div id="heroSubtitle">Web Developer</div>
+                <!-- <div id="heroSubtitle">He loved his monkey</div>heroSubtitle -->
             </div><!-- heroText -->
             <div class="heroImageSection relative flex align-middle justify-center max-w-[75%] mt-6 md:pt-0 md:w-[35%]">
                 <div class="heroImageContainer 
-                    backgroundGradient-RightToLeft
-                    border-tertiary
+                    bg-black
+                    border-quaternary
                     border-3
                     transform-flat 
                     translate-x-[-1rem]
@@ -128,11 +126,11 @@
                     overflow-hidden
                     z-3
                 ">
-                    <img class="heroImage w-110 rotate-[10deg] translate-y-[5rem] translate-x-[2rem]"
-                        src="img/whatPeopleWant.PNG" alt="Personal image">
+                    <img class="heroImage w-110 rotate-[10deg] translate-y-[1rem] translate-x-[0rem]"
+                        src="img/self.png" alt="Personal image">
                 </div>
                 <!-- TODO: Fix the max width so it ideally isn't fixed for big screens. -->
-                <div class="absolute bg-tertiary rotate-[-10deg] translate-z-[0px] w-full h-full md:pt-0 xl:max-w-[450px]"></div>
+                <div class="absolute bg-quaternary rotate-[-10deg] translate-z-[0px] w-full h-full md:pt-0 xl:max-w-[450px]"></div>
             </div>
         </div><!-- hero -->
 
@@ -277,32 +275,41 @@
             </div>
             <div class="projectsCard projectsCardEven">
                 <div class="projectsCardContent">
-                    <div class="projectsCardTitle mediumTitleFormatting">Project 2</div>
+                    <div class="projectsCardTitle mediumTitleFormatting">SRED Excel TimeSheet</div>
+                    <div class="projectsStack">
+                        <div class="projectsStackLabel">Made with:</div>
+                        <div class="projectsStackItem">Excel</div>
+                        <div class="projectsStackItem">VBA</div>
+                    </div>
                     <div class="projectsCardDescription">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique massa sed egestas
-                        feugiat. Donec pellentesque
-                        leo a volutpat faucibus. Sed ac imperdiet nisl. Sed viverra interdum nunc tempus hendrerit. Duis
-                        mi erat, pretium sit
-                        amet elit at, commodo vestibulum ex.
+                        In order to keep track of R&D time spent, I took the existing template that users were already familiar with
+                        and added VBA buttons in order to add consistency and ease of setup. Managers were able to add user pages automatically
+                        and access is locked based on the AD user  to properly enter time. Approval is also locked to only be accessible by
+                        supervisors as outlined in AD. This project saved hours of setup time every fiscal year, and the consistency allowed for 
+                        easy summary reporting for the tax department.
                     </div>
                 </div>
                 <div class="projectsCardImageContainer">
-                    <img class="projectsCardImage" src="img/ProjectImage-Sample.jpg" alt="Project 2">
+                    <img class="projectsCardImage" src="img/project/Project_ExcelTimeSheet_Screenshot.png" alt="Project 2">
                 </div>
             </div>
             <div class="projectsCard projectsCardOdd">
                 <div class="projectsCardContent">
-                    <div class="projectsCardTitle mediumTitleFormatting">Project 3</div>
+                    <div class="projectsCardTitle mediumTitleFormatting">SDC Website</div>
+                    <div class="projectsStack">
+                        <div class="projectsStackLabel">Made with:</div>
+                        <div class="projectsStackItem">Next.js</div>
+                        <div class="projectsStackItem">Tailwind</div>
+                        <div class="projectsStackItem">zod</div>
+                    </div>
                     <div class="projectsCardDescription">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique massa sed egestas
-                        feugiat. Donec pellentesque
-                        leo a volutpat faucibus. Sed ac imperdiet nisl. Sed viverra interdum nunc tempus hendrerit. Duis
-                        mi erat, pretium sit
-                        amet elit at, commodo vestibulum ex.
+                        The Software Developers of Calgary is a meetup group founded in Calgary who host events out of the Calgary Central Library. 
+                        Their website is used to plan events and allows local members to sign up for their monthly hackathon. I have contributed to the 
+                        modification and layout of the current site, while also volunteering with the organization.
                     </div>
                 </div>
                 <div class="projectsCardImageContainer">
-                    <img class="projectsCardImage" src="img/ProjectImage-Sample.jpg" alt="Project 1">
+                    <img class="projectsCardImage" src="img/project/Project_SDCWebsite_Screenshot.png" alt="Software Developers of Calgary Website Screenshot.">
                 </div>
             </div>
             <div class="projectsCard projectsCardEven">
