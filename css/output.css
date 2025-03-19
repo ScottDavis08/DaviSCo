@@ -286,16 +286,16 @@
     --tw-translate-x: -1rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-x-\[2rem\] {
-    --tw-translate-x: 2rem;
+  .translate-x-\[0rem\] {
+    --tw-translate-x: 0rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[-\.5rem\] {
     --tw-translate-y: -.5rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .translate-y-\[5rem\] {
-    --tw-translate-y: 5rem;
+  .translate-y-\[1rem\] {
+    --tw-translate-y: 1rem;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-z-\[0px\] {
@@ -354,14 +354,14 @@
     border-style: var(--tw-border-style);
     border-width: 3px;
   }
-  .border-tertiary {
-    border-color: var(--color-tertiary);
+  .border-quaternary {
+    border-color: var(--color-quaternary);
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-quaternary {
     background-color: var(--color-quaternary);
-  }
-  .bg-tertiary {
-    background-color: var(--color-tertiary);
   }
   .bg-textColor {
     background-color: var(--color-textColor);
@@ -383,11 +383,6 @@
   }
   .via-primary {
     --tw-gradient-via: var(--color-primary);
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
-  .via-secondary {
-    --tw-gradient-via: var(--color-secondary);
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-via-stops);
   }
@@ -759,6 +754,25 @@
     padding-bottom: calc(var(--spacing) * 10);
     @media (width >= 48rem) {
       width: 58%;
+    }
+  }
+  .projectsStack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .projectsStackLabel {
+    margin-right: calc(var(--spacing) * 1);
+  }
+  .projectsStackItem {
+    margin-inline: calc(var(--spacing) * 1.5);
+    color: var(--color-quaternary);
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.1;
+      }
     }
   }
   .projectsCardImageContainer {

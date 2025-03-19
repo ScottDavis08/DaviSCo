@@ -91,6 +91,15 @@
     .projectsCardContent {
         @apply flex flex-col justify-start w-full md:w-[58%] pb-10 ;
     }
+    .projectsStack {
+        @apply flex flex-row flex-wrap justify-start pb-2;
+    }
+    .projectsStackLabel {
+        @apply mr-1
+    }
+    .projectsStackItem {
+        @apply mx-1.5 text-quaternary hover:scale-[1.1];
+    }
     .projectsCardImageContainer {
         @apply w-full md:w-[38%] pb-0 md:mb-10 
             border-tertiary border-[.2em] rounded-[1em] 
