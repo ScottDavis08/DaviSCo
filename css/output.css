@@ -677,11 +677,6 @@
       max-width: 450px;
     }
   }
-  .\32 xl\:pt-0 {
-    @media (width >= 96rem) {
-      padding-top: calc(var(--spacing) * 0);
-    }
-  }
   .\32 xl\:pt-2 {
     @media (width >= 96rem) {
       padding-top: calc(var(--spacing) * 2);
