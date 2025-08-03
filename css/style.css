@@ -80,7 +80,7 @@
 
     /* Projects components. */
     .projectsCard {
-        @apply w-full flex flex-row flex-wrap justify-between items-start gap-5;
+        @apply w-full flex flex-row flex-wrap justify-between items-center gap-5;
     }
     .projectsCardOdd {
         @apply flex-row;
@@ -89,7 +89,7 @@
         @apply flex-row-reverse;
     }
     .projectsCardContent {
-        @apply flex flex-col justify-start w-full md:w-[58%] pb-10 ;
+        @apply flex flex-col justify-start w-full lg:w-[58%] md:w-[40%] pb-10 ;
     }
     .projectsStack {
         @apply flex flex-row flex-wrap justify-start pb-2;
@@ -101,11 +101,12 @@
         @apply mx-1.5 text-quaternary hover:scale-[1.1];
     }
     .projectsCardImageContainer {
-        @apply w-full md:w-[38%] pb-0 md:mb-10 
+        @apply w-full lg:w-[38%] md:w-[56%] pb-0 md:mb-10 
             border-quaternary border-[.2em] rounded-[1em] 
             overflow-hidden
             shadow-2xl
-            shadow-quaternary;
+            shadow-quaternary
+            flex flex-col sm:flex-row gap-2;
     }
     .projectsCardImage {
         @apply w-[100%] h-auto object-contain;
