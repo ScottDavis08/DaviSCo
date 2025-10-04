@@ -76,7 +76,7 @@
 
         <div id="linkLayout"
             class="hidden fixed z-100 left-0 bottom-0 md:flex flex-col items-center gap-[1rem] w-[5rem]">
-            <a class="linkLayoutLinks" href="mailto:Scott.Davis08@gmail.com" target="_blank" aria-label="email">
+            <a class="linkLayoutLinks" href="mailto:Scott@DaviSCoTech.com" target="_blank" aria-label="email">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                     role="img" class="linkLayoutSVG iconify iconify--mi" width="1em" height="1em" viewBox="0 0 24 24">
                     <path fill="currentColor"
@@ -107,16 +107,12 @@
         <div id="heroSection"
             class="hero sectionSpacer backgroundGradient-LeftToRight pageWidth flex justify-around pt-3 md:pt-15  flex-wrap">
             <!-- hero -->
-             <!-- TODO: Fix the transition size where the hero image goes weird. -->
             <div class="heroText flex justify-center flex-col lg:w-[59%] md:w-[75%] lg:pr-2 pb-3"><!-- heroText -->
-                <!-- <div id="heroTitle mediumTitleFormatting">This is Dobby</div>heroTitle -->
                 <div id="heroTitle" class="titleFormatting text-center">Scott Davis</div>
-                <div id="heroSubtitle" class=" my-3 text-center text-quaternary">Developer <span class="text-textColor"> | </span> ERP Consultant <span class="text-textColor"> | </span> Database Admin</div>
-                <div id="heroContent" class="text-base">I am an efficiency-focused Full Stack Developer with 12 years of experience in IT, specializing in automation,
-                optimization, and ERP systems. With a strong foundation in self-directed learning, I transitioned from working with
-                Dynamics GP to backend Java development, embracing new technologies to expand my expertise. I thrive on solving complex
-                problems, streamlining workflows, and delivering impactful solutions that enhance user experiences and drive business
-                success.</div>
+                <div id="heroSubtitle" class=" my-3 text-center text-quaternary">Full Stack Developer <span class="text-textColor"> | </span> ERP Consultant <span class="text-textColor"></div>
+                <div id="heroContent" class="text-base">I’m a Full Stack Developer and consultant with 12 years of IT experience, focused on building efficient,
+                    scalable solutions with modern technologies like TypeScript, React, and PostgreSQL. Drawing on a background in ERP systems, I help businesses
+                    streamline operations, automate processes, and deliver faster, more intuitive digital experiences.</div>
             </div><!-- heroText -->
             <div class="heroImageSection relative flex align-middle justify-center max-w-[75%] mt-6 md:pt-0 ">
                 <div class="heroImageContainer 
@@ -133,7 +129,6 @@
                     <img class="heroImage w-110 rotate-[10deg] translate-y-[2.5rem] translate-x[1rem]"
                         src="img/self.png" alt="Personal image">
                 </div>
-                <!-- TODO: Fix the max width so it ideally isn't fixed for big screens. -->
                 <div class="absolute bg-quaternary rotate-[-10deg] translate-z-[0px] w-full h-full md:pt-0 xl:max-w-[450px]"></div>
             </div>
         </div><!-- hero -->
@@ -154,16 +149,14 @@
                 <div class="aboutCard 2xl:pt-2"><!-- aboutCard -->
                     <div class="aboutCardTitle mediumTitleFormatting">Present</div><!-- aboutCardTitle -->
                     <div class="aboutCardContent">
-                        I am currently working as a contract Java Developer. I am constantly working to improve my skills and look for new 
-                        opportunities to build exciting projects. I am also volunteering with the Software Developers of Calgary to help run their events and work with other peers in the city that I call home.
+                        I’m currently partnering with businesses on contract development projects, delivering clean, maintainable, and high-performing solutions. I’m dedicated to understanding each client’s goals and ensuring every project delivers measurable value. I also volunteer with the Software Developers of Calgary, helping grow and support our local developer community.
                     </div><!-- aboutCardContent -->
                 </div><!-- aboutCard -->
 
                 <div class="aboutCard"><!-- aboutCard -->
                     <div class="aboutCardTitle mediumTitleFormatting">Future</div><!-- aboutCardTitle -->
                     <div class="aboutCardContent">
-                        I aim to continue growing as a full-stack developer, exploring cutting-edge technologies and contributing to impactful projects. 
-                        My goal is to lead innovative solutions that drive efficiency and create value for businesses and communities.
+                        I plan to continue building strong client relationships and growing my consulting work as a full-time practice. As I expand my skills with new technologies, my focus remains on delivering meaningful solutions and long-term value for the clients I already serve.
                     </div><!-- aboutCardContent -->
                 </div><!-- aboutCard -->
             </div><!-- aboutContainer -->
@@ -181,8 +174,9 @@
                         <ul class="skillsList">
                             <li class="skillsListItem">Typescript</li>
                             <li class="skillsListItem">JavaScript</li>
-                            <li class="skillsListItem">T-SQL</li>
                             <li class="skillsListItem">PostgreSQL</li>
+                            <li class="skillsListItem">T-SQL</li>
+                            <li class="skillsListItem">Mongo DB</li>
                             <li class="skillsListItem">Java</li>
                             <li class="skillsListItem">C#</li>
                             <li class="skillsListItem">PHP</li>
@@ -198,6 +192,8 @@
                         <ul class="skillsList">
                             <li class="skillsListItem">React</li>
                             <li class="skillsListItem">React Native</li>
+                            <li class="skillsListItem">Svelt</li>
+                            <li class="skillsListItem">Sveltkit</li>
                             <li class="skillsListItem">Next.js</li>
                             <li class="skillsListItem">Tailwind CSS</li>
                             <li class="skillsListItem">Sass</li>
@@ -205,6 +201,8 @@
                             <li class="skillsListItem">ASP.NET</li>
                             <li class="skillsListItem">Vaadin</li>
                             <li class="skillsListItem">REST APIs</li>
+                            <li class="skillsListItem">GraphQL</li>
+                            <li class="skillsListItem">tRPC</li>
                         </ul>
                     </div><!-- skillsCardContent -->
                 </div><!-- skillsCard -->
@@ -227,7 +225,7 @@
         </div><!-- skills -->
 
         <!-- Projects Section -->
-        <!-- TODO: add skills list for projects. -->
+        <!-- TODO: Add links to Repo's and live sites. -->
         <div id="projectsSection"
             class="projects sectionSpacer backgroundGradient-RightToLeft pageWidth flex flex-col items-center">
             <!-- Projects -->
@@ -309,6 +307,7 @@
                         <div class="projectsStackItem">Tailwind</div>
                         <div class="projectsStackItem">zod</div>
                         <div class="projectsStackItem">Vercel</div>
+                        <div class="projectsStackItem">tRPC</div>
                     </div>
                     <div class="projectsCardDescription">
                         The Software Developers Collective is a meetup group founded in Calgary who host events out of the Calgary Central Library. 
@@ -349,7 +348,7 @@
                 <div class="fillerItem hidden md:inline"></div>
                 <!-- TODO: drop down menu to copy email instead of just opening client. -->
                 <div class="personalLinksFooterItem"><a
-                        href="mailto:Scott.Davis08@gmail.com" target="_blank">Email</a></div>
+                        href="mailto:Scott@DaviSCoTech.com" target="_blank">Email</a></div>
                 <div class="personalLinksFooterItem"><a
                         href="https://www.linkedin.com/in/scott-davis-08/" target="_blank">LinkedIn</a></div>
                 <div class="personalLinksFooterItem"><a

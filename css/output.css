@@ -197,6 +197,9 @@
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
   .sticky {
     position: sticky;
   }
@@ -307,6 +310,12 @@
   }
   .max-w-\[75\%\] {
     max-width: 75%;
+  }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .grow {
+    flex-grow: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -660,11 +669,6 @@
       width: 59%;
     }
   }
-  .md\:w-\[65\%\] {
-    @media (width >= 48rem) {
-      width: 65%;
-    }
-  }
   .md\:w-\[75\%\] {
     @media (width >= 48rem) {
       width: 75%;
@@ -693,11 +697,6 @@
   .lg\:pr-2 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 2);
-    }
-  }
-  .lg\:pr-3 {
-    @media (width >= 64rem) {
-      padding-right: calc(var(--spacing) * 3);
     }
   }
   .xl\:max-w-\[450px\] {
